@@ -1,0 +1,667 @@
+{
+  "schema_version": 1,
+  "description": "Expanded RAGAS eval set: 10 questions per policy level (1–6), anchored to legal-boundary chunk IDs.",
+  "index_version": "legal_boundary_v4",
+  "samples": [
+    {
+      "id": "L1-01",
+      "document_level": 1,
+      "topic": "appointments",
+      "difficulty": "easy",
+      "user_input": "Before the Public Service Commission makes an appointment, what must it do regarding the relevant Minister?",
+      "reference": "The Commission must consult with the relevant Minister and take into consideration the Minister's views and requirements before making an appointment.",
+      "reference_context_ids": [
+        "L1:PSA2020RE:subsection:14(2)"
+      ]
+    },
+    {
+      "id": "L1-02",
+      "document_level": 1,
+      "topic": "commission_functions",
+      "difficulty": "medium",
+      "user_input": "What recruitment and appointment matters are among the principal functions of the Public Service Commission?",
+      "reference": "The Commission determines practices and procedures relating to recruitment and appointment of employees, promotion, employment, transfer, secondment, redeployment, discipline, and termination.",
+      "reference_context_ids": [
+        "L1:PSA2020RE:subsection:6(i)"
+      ]
+    },
+    {
+      "id": "L1-03",
+      "document_level": 1,
+      "topic": "definitions",
+      "difficulty": "easy",
+      "user_input": "How does the Public Service Act define a Ministry?",
+      "reference": "A Ministry means any ministry, department or office listed in Schedule I of the Act.",
+      "reference_context_ids": [
+        "L1:PSA2020RE:definition:3:ministry"
+      ]
+    },
+    {
+      "id": "L1-04",
+      "document_level": 1,
+      "topic": "chief_executive_officers",
+      "difficulty": "easy",
+      "user_input": "Does each Ministry have a Chief Executive Officer under the Public Service Act?",
+      "reference": "Yes. There shall be a Chief Executive Officer or Chief Executive Officers for each Ministry.",
+      "reference_context_ids": [
+        "L1:PSA2020RE:subsection:13(1)"
+      ]
+    },
+    {
+      "id": "L1-05",
+      "document_level": 1,
+      "topic": "objects_of_act",
+      "difficulty": "medium",
+      "user_input": "What does Section 4B of the Public Service Act say about managing the Public Service?",
+      "reference": "Section 4B includes providing a legal framework for the effective and efficient management and leadership of the Public Service.",
+      "reference_context_ids": [
+        "L1:PSA2020RE:subsection:4B(b)"
+      ]
+    },
+    {
+      "id": "L2-01",
+      "document_level": 2,
+      "topic": "breach_of_code",
+      "difficulty": "easy",
+      "user_input": "What happens if a public servant breaches the Code of Ethics and Conduct?",
+      "reference": "A breach of the Code is deemed a breach of discipline under the Public Service (Disciplinary Procedures) Regulations as amended.",
+      "reference_context_ids": [
+        "L2:PSECC2010:section:8"
+      ]
+    },
+    {
+      "id": "L2-02",
+      "document_level": 2,
+      "topic": "workplace_relationships",
+      "difficulty": "medium",
+      "user_input": "Can a public servant use their official status to obtain a personal advantage under the Code of Ethics?",
+      "reference": "No. They must not use their duty, status, power or authority to gain or seek to gain a benefit or advantage for themselves or any other person.",
+      "reference_context_ids": [
+        "L2:PSECC2010:subsection:6(d)"
+      ]
+    },
+    {
+      "id": "L2-03",
+      "document_level": 2,
+      "topic": "short_title",
+      "difficulty": "easy",
+      "user_input": "What is the short title of the Public Service Code of Ethics and Conduct?",
+      "reference": "It may be cited as the Public Service Code of Ethics and Conduct 2010.",
+      "reference_context_ids": [
+        "L2:PSECC2010:subsection:1(1)"
+      ]
+    },
+    {
+      "id": "L2-04",
+      "document_level": 2,
+      "topic": "political_activity",
+      "difficulty": "medium",
+      "user_input": "When may a public servant make a public statement or engage in political activity under the Code?",
+      "reference": "They must refrain from making public statements or engaging in political activity contrary to the Amendment Act 2010 without prior approval of the Chief Executive Officer.",
+      "reference_context_ids": [
+        "L2:PSECC2010:subsection:4(f)"
+      ]
+    },
+    {
+      "id": "L2-05",
+      "document_level": 2,
+      "topic": "public_relationship",
+      "difficulty": "easy",
+      "user_input": "What does the Code require regarding accountability in relationships with the public?",
+      "reference": "Public servants must be accountable for their actions.",
+      "reference_context_ids": [
+        "L2:PSECC2010:subsection:5(b)"
+      ]
+    },
+    {
+      "id": "L3-01",
+      "document_level": 3,
+      "topic": "minor_discipline",
+      "difficulty": "easy",
+      "user_input": "Who may impose sanctions for a minor breach of discipline under the Disciplinary Procedures Regulations?",
+      "reference": "The Chief Executive Officer may impose sanctions after finding that an employee committed a minor breach of discipline.",
+      "reference_context_ids": [
+        "L3:PSDPRE:subregulation:4(1)"
+      ]
+    },
+    {
+      "id": "L3-02",
+      "document_level": 3,
+      "topic": "financial_irregularity",
+      "difficulty": "medium",
+      "user_input": "What must a Chief Executive Officer do when there is a serious financial irregularity?",
+      "reference": "The Chief Executive Officer shall initiate disciplinary action by giving a complete report to the Chief Executive Officer of the Commission.",
+      "reference_context_ids": [
+        "L3:PSDPRE:subregulation:6(b)"
+      ]
+    },
+    {
+      "id": "L3-03",
+      "document_level": 3,
+      "topic": "service_of_documents",
+      "difficulty": "medium",
+      "user_input": "How must documents be served for disciplinary proceedings before the Charge Formulation Committee, Commission, or Tribunal?",
+      "reference": "Personal service of any document is required for proceedings before the Charge Formulation Committee, the Commission, or the Tribunal.",
+      "reference_context_ids": [
+        "L3:PSDPRE:subregulation:11(1)"
+      ]
+    },
+    {
+      "id": "L3-04",
+      "document_level": 3,
+      "topic": "grievance_definitions",
+      "difficulty": "easy",
+      "user_input": "Who is the employer for grievance resolution under the Grievance and Dispute Procedures Regulations?",
+      "reference": "For Part II of those Regulations, employer means the Chief Executive Officer or the Commission.",
+      "reference_context_ids": [
+        "L3:PSGDPR:regulation:3"
+      ]
+    },
+    {
+      "id": "L3-05",
+      "document_level": 3,
+      "topic": "grievance_appeal",
+      "difficulty": "medium",
+      "user_input": "How long does an employee have to appeal a grievance decision?",
+      "reference": "The employee must file an appeal with the Secretary within 14 days of receipt of the decision, together with the prescribed fee in Schedule II.",
+      "reference_context_ids": [
+        "L3:PSGDPR:subregulation:10(2)"
+      ]
+    },
+    {
+      "id": "L4-01",
+      "document_level": 4,
+      "topic": "fraud_reporting",
+      "difficulty": "easy",
+      "user_input": "What must a Head of Division do when notified of an alleged fraud?",
+      "reference": "The Head of Division must take action in accordance with the Fraud Policy.",
+      "reference_context_ids": [
+        "L4:TPFP:subsection:13(3)"
+      ]
+    },
+    {
+      "id": "L4-02",
+      "document_level": 4,
+      "topic": "asset_management",
+      "difficulty": "medium",
+      "user_input": "When must asset management perform a physical stock-take under the Fraud Policy?",
+      "reference": "Asset management must perform a physical asset count at the end of each financial year to verify assets on the register, as required under Section 5 of the Treasury Instructions 2020.",
+      "reference_context_ids": [
+        "L4:TPFP:subsection:17(c)"
+      ]
+    },
+    {
+      "id": "L4-03",
+      "document_level": 4,
+      "topic": "salary_control",
+      "difficulty": "medium",
+      "user_input": "What must Chief Executive Officers ensure about recording attendance and overtime under Policy 39?",
+      "reference": "They must issue detailed internal instructions to accounting officers, time-keepers and supervisors on how attendance and authorised overtime are recorded and checked.",
+      "reference_context_ids": [
+        "L4:PSP2010:subpolicy:39(4)"
+      ]
+    },
+    {
+      "id": "L4-04",
+      "document_level": 4,
+      "topic": "sexual_harassment",
+      "difficulty": "easy",
+      "user_input": "What is the premise of the Public Service Sexual Harassment Policy?",
+      "reference": "The policy reflects and reinforces principles and practices that apply to conduct in all Government workplaces.",
+      "reference_context_ids": [
+        "L4:PSHP:subsection:I(1)"
+      ]
+    },
+    {
+      "id": "L4-05",
+      "document_level": 4,
+      "topic": "fraud_definitions",
+      "difficulty": "easy",
+      "user_input": "How does the Fraud Policy define a bribe?",
+      "reference": "A bribe means the giving, offering or acceptance of any money or valuable consideration by any person, whether within or outside Government, to any person.",
+      "reference_context_ids": [
+        "L4:TPFP:definition:4:bribe"
+      ]
+    },
+    {
+      "id": "L5-01",
+      "document_level": 5,
+      "topic": "sporting_leave",
+      "difficulty": "medium",
+      "user_input": "How much special leave may employees selected for overseas national sporting tours receive?",
+      "reference": "They may be granted special leave of absence for up to 40 working days per annum.",
+      "reference_context_ids": [
+        "L5:PSPI2025:subinstruction:2B.22.1(1)"
+      ]
+    },
+    {
+      "id": "L5-02",
+      "document_level": 5,
+      "topic": "definitions",
+      "difficulty": "easy",
+      "user_input": "Who is the Chief Executive Officer of the Commission under the Policy Instructions?",
+      "reference": "The Chief Executive Officer of the Office of the Public Service Commission appointed under the Public Service Act.",
+      "reference_context_ids": [
+        "L5:PSPI2025:definition:2:chief_executive_officer_of_the_commission"
+      ]
+    },
+    {
+      "id": "L5-03",
+      "document_level": 5,
+      "topic": "salary_movement",
+      "difficulty": "medium",
+      "user_input": "When do salary rewards and band movements take effect under Instruction 5A.7?",
+      "reference": "Salary grants and movement up the band are linked to performance at post and are effective from 1 July of every financial year.",
+      "reference_context_ids": [
+        "L5:PSPI2025:subinstruction:5A.7(1)"
+      ]
+    },
+    {
+      "id": "L5-04",
+      "document_level": 5,
+      "topic": "performance_agreement",
+      "difficulty": "medium",
+      "user_input": "How is a Chief Executive Officer performance agreement prepared under Instruction 3A.1.1?",
+      "reference": "The Chief Executive Officer's performance agreement is prepared annually by the Chief Executive Officer and agreed with the Minister.",
+      "reference_context_ids": [
+        "L5:PSPI2025:subinstruction:3A.1.1(1)"
+      ]
+    },
+    {
+      "id": "L5-05",
+      "document_level": 5,
+      "topic": "re_employment",
+      "difficulty": "medium",
+      "user_input": "Can an employee compulsorily retired on ill-health grounds be re-employed without a medical report?",
+      "reference": "No. They shall not be re-employed without a medical report from the Chief Executive Officer for the Ministry of Health.",
+      "reference_context_ids": [
+        "L5:PSPI2025:instruction_ref:1B.5.3"
+      ]
+    },
+    {
+      "id": "L6-01",
+      "document_level": 6,
+      "topic": "social_media",
+      "difficulty": "easy",
+      "user_input": "Can public servants post illegal or pornographic content on personal social media?",
+      "reference": "No. Employees must not use personal social media to post information that breaches any law of Tonga, including pornographic material, child pornography, or child abuse content.",
+      "reference_context_ids": [
+        "L6:SMGTPS:subsection:9(11)"
+      ]
+    },
+    {
+      "id": "L6-02",
+      "document_level": 6,
+      "topic": "social_media",
+      "difficulty": "medium",
+      "user_input": "When may employees use personal social media accounts for official ministry work?",
+      "reference": "Exceptions apply for social media administrators who must log onto personal accounts to manage ministry platforms, and for employees informing the public about initiatives, projects, events, or important work.",
+      "reference_context_ids": [
+        "L6:SMGTPS:subsection:9(2)"
+      ]
+    },
+    {
+      "id": "L6-03",
+      "document_level": 6,
+      "topic": "political_neutrality",
+      "difficulty": "medium",
+      "user_input": "Who should be the first responder for political neutrality concerns under the guidelines?",
+      "reference": "Ministry Human Resources units should be the first responders and must be well versed in the Code and applicable policies.",
+      "reference_context_ids": [
+        "L6:TPNG:subsection:2.7"
+      ]
+    },
+    {
+      "id": "L6-04",
+      "document_level": 6,
+      "topic": "political_neutrality",
+      "difficulty": "easy",
+      "user_input": "Which legislation do the Political Neutrality Guidelines cite as their basis?",
+      "reference": "They cite Section 4B of the Public Service Act, which sets out objectives of the Act.",
+      "reference_context_ids": [
+        "L6:TPNG:subsection:1.1"
+      ]
+    },
+    {
+      "id": "L6-05",
+      "document_level": 6,
+      "topic": "social_media_principles",
+      "difficulty": "easy",
+      "user_input": "What freedom-of-expression principle appears in Section 4 of the Social Media Guideline?",
+      "reference": "Section 4 states that it shall be lawful for people to speak, write and print their opinions, with freedom of speech and of the press.",
+      "reference_context_ids": [
+        "L6:SMGTPS:subsection:4(1)"
+      ]
+    },
+    {
+      "id": "L1-06",
+      "document_level": 1,
+      "topic": "commission_establishment",
+      "difficulty": "easy",
+      "user_input": "Is there a Public Service Commission established under the Public Service Act?",
+      "reference": "Yes. There shall be established a Public Service Commission.",
+      "reference_context_ids": [
+        "L1:PSA2020RE:subsection:5(1)"
+      ]
+    },
+    {
+      "id": "L1-07",
+      "document_level": 1,
+      "topic": "definitions",
+      "difficulty": "easy",
+      "user_input": "How does the Public Service Act define the Commission?",
+      "reference": "The Commission means the Public Service Commission established under the Act.",
+      "reference_context_ids": [
+        "L1:PSA2020RE:definition:3:commission"
+      ]
+    },
+    {
+      "id": "L1-08",
+      "document_level": 1,
+      "topic": "definitions",
+      "difficulty": "easy",
+      "user_input": "Who counts as an employee under the Public Service Act?",
+      "reference": "An employee means all persons employed in the Public Service.",
+      "reference_context_ids": [
+        "L1:PSA2020RE:definition:3:employee"
+      ]
+    },
+    {
+      "id": "L1-09",
+      "document_level": 1,
+      "topic": "redundancy",
+      "difficulty": "medium",
+      "user_input": "Who may recommend that a public service post be made redundant?",
+      "reference": "The Commission may, in consultation with the Chief Executive Officer, recommend to the relevant Minister that any post be made redundant.",
+      "reference_context_ids": [
+        "L1:PSA2020RE:section:15"
+      ]
+    },
+    {
+      "id": "L1-10",
+      "document_level": 1,
+      "topic": "public_service_principles",
+      "difficulty": "medium",
+      "user_input": "What does the Public Service Act say about the political neutrality of the Public Service?",
+      "reference": "The Public Service is apolitical, performing its functions in an impartial, professional and competent manner.",
+      "reference_context_ids": [
+        "L1:PSA2020RE:subsection:4C(a)"
+      ]
+    },
+    {
+      "id": "L2-06",
+      "document_level": 2,
+      "topic": "principles",
+      "difficulty": "easy",
+      "user_input": "What does the Code of Ethics require about fulfilling obligations to Government?",
+      "reference": "Public servants must fulfil their lawful obligations to the Government with professionalism and integrity.",
+      "reference_context_ids": [
+        "L2:PSECC2010:subsection:3(a)"
+      ]
+    },
+    {
+      "id": "L2-07",
+      "document_level": 2,
+      "topic": "obligations_to_government",
+      "difficulty": "easy",
+      "user_input": "Must public servants comply with applicable policies and procedures under the Code of Ethics?",
+      "reference": "Yes. They must comply with all applicable laws, regulations, policies, instructions and procedures.",
+      "reference_context_ids": [
+        "L2:PSECC2010:subsection:4(b)"
+      ]
+    },
+    {
+      "id": "L2-08",
+      "document_level": 2,
+      "topic": "obligations_to_government",
+      "difficulty": "medium",
+      "user_input": "What standard of discretion does the Code of Ethics require of public servants?",
+      "reference": "They must act with appropriate discretion.",
+      "reference_context_ids": [
+        "L2:PSECC2010:subsection:4(c)"
+      ]
+    },
+    {
+      "id": "L2-09",
+      "document_level": 2,
+      "topic": "workplace_conduct",
+      "difficulty": "medium",
+      "user_input": "What must public servants avoid to protect the reputation of their Ministry under the Code?",
+      "reference": "They must avoid any activity, whether connected with official duties or otherwise, that might bring their Ministry and the Public Service into disrepute.",
+      "reference_context_ids": [
+        "L2:PSECC2010:subsection:7(a)"
+      ]
+    },
+    {
+      "id": "L2-10",
+      "document_level": 2,
+      "topic": "purpose",
+      "difficulty": "easy",
+      "user_input": "What is one purpose of the Public Service Code of Ethics and Conduct?",
+      "reference": "It provides guidance to employees on the standards of behaviour required of them.",
+      "reference_context_ids": [
+        "L2:PSECC2010:subsection:2(a)"
+      ]
+    },
+    {
+      "id": "L3-06",
+      "document_level": 3,
+      "topic": "breach_classification",
+      "difficulty": "medium",
+      "user_input": "Who decides whether a breach of discipline is minor or serious under the Disciplinary Procedures Regulations?",
+      "reference": "Subject to the Regulations, a Chief Executive Officer or the Commission shall decide whether a breach of discipline is minor or serious.",
+      "reference_context_ids": [
+        "L3:PSDPRE:subregulation:3(1)"
+      ]
+    },
+    {
+      "id": "L3-07",
+      "document_level": 3,
+      "topic": "serious_discipline",
+      "difficulty": "medium",
+      "user_input": "How are reports of serious breach of discipline or repeated minor breaches handled?",
+      "reference": "A report of serious breach of discipline or repeated minor breaches of discipline shall be dealt with as prescribed in Regulation 7.",
+      "reference_context_ids": [
+        "L3:PSDPRE:subregulation:7(1)"
+      ]
+    },
+    {
+      "id": "L3-08",
+      "document_level": 3,
+      "topic": "grievance_confidentiality",
+      "difficulty": "easy",
+      "user_input": "Must an employment grievance be kept confidential under the Grievance Regulations?",
+      "reference": "Yes. The employment grievance shall be kept confidential between the parties.",
+      "reference_context_ids": [
+        "L3:PSGDPR:regulation:5"
+      ]
+    },
+    {
+      "id": "L3-09",
+      "document_level": 3,
+      "topic": "grievance_meeting",
+      "difficulty": "medium",
+      "user_input": "How quickly must an employer meet with an employee after receiving a grievance notice?",
+      "reference": "The employer shall call a meeting with the employee within 5 working days from receipt of the notice.",
+      "reference_context_ids": [
+        "L3:PSGDPR:subregulation:6(1)"
+      ]
+    },
+    {
+      "id": "L3-10",
+      "document_level": 3,
+      "topic": "grievance_appeal_timeline",
+      "difficulty": "medium",
+      "user_input": "How long does the Tribunal have to determine a grievance appeal?",
+      "reference": "The appeal shall be determined within 20 working days from the date the appeal was filed with the Secretary of the Tribunal.",
+      "reference_context_ids": [
+        "L3:PSGDPR:regulation:11"
+      ]
+    },
+    {
+      "id": "L4-06",
+      "document_level": 4,
+      "topic": "policy_purpose",
+      "difficulty": "easy",
+      "user_input": "What is the purpose of the Public Service Policy 2010?",
+      "reference": "The purpose of the Policy is to set out the general policies for the Public Service.",
+      "reference_context_ids": [
+        "L4:PSP2010:policy:3"
+      ]
+    },
+    {
+      "id": "L4-07",
+      "document_level": 4,
+      "topic": "permanent_employment",
+      "difficulty": "medium",
+      "user_input": "How are permanent employees appointed under Public Service Policy 2010?",
+      "reference": "Permanent employees shall be appointed to permanent posts funded from the annual estimates of the relevant Ministry.",
+      "reference_context_ids": [
+        "L4:PSP2010:subpolicy:8(1)"
+      ]
+    },
+    {
+      "id": "L4-08",
+      "document_level": 4,
+      "topic": "fraud_prevention",
+      "difficulty": "medium",
+      "user_input": "Who is responsible for preventing fraud in ministries under the Fraud Policy?",
+      "reference": "The Chief Executive Officer has the overall responsibility and accountability for the identification and prevention of fraud in the MDAs.",
+      "reference_context_ids": [
+        "L4:TPFP:subsection:12(1)"
+      ]
+    },
+    {
+      "id": "L4-09",
+      "document_level": 4,
+      "topic": "fraud_discipline",
+      "difficulty": "medium",
+      "user_input": "What happens if an employee fails to comply with the Fraud Policy?",
+      "reference": "The employee shall be subject to disciplinary action in accordance with the Fraud Policy and the Regulations.",
+      "reference_context_ids": [
+        "L4:TPFP:subsection:14(2)"
+      ]
+    },
+    {
+      "id": "L4-10",
+      "document_level": 4,
+      "topic": "sexual_harassment_complaints",
+      "difficulty": "hard",
+      "user_input": "Where should a formal sexual harassment complaint be submitted under the Sexual Harassment Policy?",
+      "reference": "The complaint should be submitted to the Commission through the Chief Executive Officer of the Ministry concerned; if the alleged harasser is the CEO, the complaint may be made directly to the Commission.",
+      "reference_context_ids": [
+        "L4:PSHP:subsection:IV(2)"
+      ]
+    },
+    {
+      "id": "L5-06",
+      "document_level": 5,
+      "topic": "definitions",
+      "difficulty": "easy",
+      "user_input": "Who is the appointing authority under the Policy Instructions?",
+      "reference": "The appointing authority means the agency or person with the legal authority to appoint employees.",
+      "reference_context_ids": [
+        "L5:PSPI2025:definition:2:appointing_authority"
+      ]
+    },
+    {
+      "id": "L5-07",
+      "document_level": 5,
+      "topic": "termination",
+      "difficulty": "medium",
+      "user_input": "Can a permanent employee be terminated without Commission approval?",
+      "reference": "No. No permanent or contract employee's service may be terminated without the Commission's approval.",
+      "reference_context_ids": [
+        "L5:PSPI2025:subinstruction:4A.1(1)"
+      ]
+    },
+    {
+      "id": "L5-08",
+      "document_level": 5,
+      "topic": "definitions",
+      "difficulty": "medium",
+      "user_input": "How do the Policy Instructions define a casual employee?",
+      "reference": "A casual employee is a person employed on a casual basis for temporary, seasonal, or special work that does not warrant salaried employment, for a specified period not exceeding 12 months accumulated in any financial year.",
+      "reference_context_ids": [
+        "L5:PSPI2025:definition:2:casual_employee"
+      ]
+    },
+    {
+      "id": "L5-09",
+      "document_level": 5,
+      "topic": "attendance",
+      "difficulty": "easy",
+      "user_input": "What are the standard working hours for public service employees under Instruction 2A.4?",
+      "reference": "Employees work a minimum of 40 hours per week, Monday to Friday, normally from 8:30am to 4:30pm with a one-hour meal break.",
+      "reference_context_ids": [
+        "L5:PSPI2025:subinstruction:2A.4(1)"
+      ]
+    },
+    {
+      "id": "L5-10",
+      "document_level": 5,
+      "topic": "recruitment",
+      "difficulty": "medium",
+      "user_input": "What is one objective of Instruction 1A.1 on recruitment?",
+      "reference": "It provides guidance to the public service for implementing recruitment provisions in the Public Service Policy 2010 and relevant Cabinet decisions on public service employment.",
+      "reference_context_ids": [
+        "L5:PSPI2025:subinstruction:1A.1(a)"
+      ]
+    },
+    {
+      "id": "L6-06",
+      "document_level": 6,
+      "topic": "social_media_principles",
+      "difficulty": "easy",
+      "user_input": "What accountability principle applies to the Public Service in Section 4 of the Social Media Guideline?",
+      "reference": "The Public Service shall be ethical and accountable for its actions to the public in providing satisfactory service.",
+      "reference_context_ids": [
+        "L6:SMGTPS:subsection:4(c)"
+      ]
+    },
+    {
+      "id": "L6-07",
+      "document_level": 6,
+      "topic": "political_neutrality",
+      "difficulty": "medium",
+      "user_input": "What is the purpose of the Political Neutrality Guidelines?",
+      "reference": "The guidelines assist Chief Executive Officers and ministries during election periods, drawn from the Public Service Act, Regulations, and Code of Ethics.",
+      "reference_context_ids": [
+        "L6:TPNG:subsection:2.1"
+      ]
+    },
+    {
+      "id": "L6-08",
+      "document_level": 6,
+      "topic": "political_neutrality",
+      "difficulty": "medium",
+      "user_input": "Should normal government business continue during an election period under the Political Neutrality Guidelines?",
+      "reference": "Yes. Normal business of government should continue, but ministries should avoid partisanship and ensure impartiality of the public service.",
+      "reference_context_ids": [
+        "L6:TPNG:subsection:2.3"
+      ]
+    },
+    {
+      "id": "L6-09",
+      "document_level": 6,
+      "topic": "social_media",
+      "difficulty": "easy",
+      "user_input": "Can employees access personal social media on government computers during working hours?",
+      "reference": "No. Employees must not use a government computer or government-issued device to access personal social media during official working hours.",
+      "reference_context_ids": [
+        "L6:SMGTPS:subsection:9(1)"
+      ]
+    },
+    {
+      "id": "L6-10",
+      "document_level": 6,
+      "topic": "political_neutrality",
+      "difficulty": "medium",
+      "user_input": "Can civil servants engage in public political campaigning while on duty under the Political Neutrality Guidelines?",
+      "reference": "No. They must not engage in public campaigning, political endorsements, or wear campaign material while on duty or in an official capacity.",
+      "reference_context_ids": [
+        "L6:TPNG:subsection:2.4"
+      ]
+    }
+  ]
+}
